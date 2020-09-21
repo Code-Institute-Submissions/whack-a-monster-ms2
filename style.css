@@ -1,59 +1,16 @@
 /*Game Styling*/
-/* {
+
+ *{
     padding: 0;
     margin: 0;
-    position: center;
-    
-}*/
-body{
-    height:100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    background-color: burlywood;
+    position: center;  
+    box-sizing: border-box;
 }
- #game {
-     width: 140vmin;
-     height: 80vmin;
-     border: 1px solid black;
-     display: grid;
-     justify-content: center;
-     align-items: center;
-     background-color:#e3eaa7;
-     grid-template-rows: repeat(21, 1fr);
-     grid-template-columns: repeat(31, 1fr);
-     
- }
- #character {
-     width: 60px;
-     height: 80px;
-     background-color: red;
-     position: absolute;
-     top: 80vmin;
- }
-    .animate{
-         animation: jump 500ms;
- }
- @keyframes jump{
-     0%{top:150px;}
-     30%{top:100px}
-     70%{top:100px}
-     100%{top:150px;}
- }
-
- #block {
-     width: 50px;
-     height: 50px;
-     background-color: blue;
-     position: relative;
-     top: 130px;
-     left: 480px;
-     animation: block 1s infinite linear;
- }
-
-@keyframes block{
-    0%{left:480px;}
-    100%{left:-40px;}
-} 
+body {
+    font-family:  "Helvetica", "sans-serif";
+}
+.wrapper {
+    border: 1px solid black;
+    width: 800px;
+    height: 600px;
+}
