@@ -53,3 +53,15 @@ function startGame(){
     }, 1000)
 }
 startButton.addEventListener("click", startGame);
+
+function whack(e){
+    score++;
+    this.style.backgroundImage = "url(assets/img/char2.png)";
+    this.style.pointerEvent = "none";
+    setTimeout(() => {
+        this.style.backgroundImage = "url(assets/img/char1.png)";
+        this.style.pointerEvent = "all";
+    }, 800)
+    scoreBoard.textContent = score;
+}
+moles.forEach (mole => mole.addEventListener("click", whack));
