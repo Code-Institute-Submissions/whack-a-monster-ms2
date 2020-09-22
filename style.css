@@ -86,7 +86,7 @@ button {
     transition: 0.4s;
     background-repeat: no-repeat;
     background-position: bottom;
-    z-index: 2;
+    z-index: 3;
 }
 .mole.small {
     background-size: 50%;
