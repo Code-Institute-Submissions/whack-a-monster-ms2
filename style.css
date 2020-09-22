@@ -32,9 +32,18 @@ body {
 }
 .countdown{
     position: absolute;
-    top: 400px;
+    top: 490px;
     width: 100%;
     font-size: 20px;
     text-align: center;
-    color: #010124;
+    color: red;
+}
+button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: red;
+    color: white;
+    padding: 20px 50px;
 }
