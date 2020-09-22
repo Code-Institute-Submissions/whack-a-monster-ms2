@@ -8,4 +8,8 @@ let lastHole;
 let timeUp = false;
 let timeLimit = 20000;
 let score = 0;
-let countDownBoard;
+let countdown;
+
+function pickRandomHole(holes){
+    const randomHole = Math.floor(Math.random()*holes.length)
+}
