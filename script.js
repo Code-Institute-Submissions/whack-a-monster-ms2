@@ -29,8 +29,26 @@ function popOut(){
     }, time);
 }
 
-popOut();
-
 function startGame(){
-    countdown = 20;
+    countdown = timeLimit/1000;
+    scoreBoard.textContent = 0;
+    scoreBorad.style.display = "block";
+    countDownBoard.textContent = countdown;
+    timeUp = false;
+    score = 0;
+    popOut();
+    setTimeout(function(){
+        timeUp = true;
+    }, timeLimit);
+
+    let startCountdown = setInterval(function(){
+        coundown -= 1;
+        countDownBoard.textContent = countdown;
+        if (countdown < 0) {
+            countdown = 0;
+            clearInterval(startCountdown);
+            countDownBoard.textContent = "Times UP!!!"
+
+        }
+    }, 1000)
 }
