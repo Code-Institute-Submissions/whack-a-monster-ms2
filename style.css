@@ -80,12 +80,13 @@ button {
 .mole {
     background-image: url("assets/img/char1.png");
     position: absolute;
-    top: 400%;
+    top: 100%;
     width: 100%;
     height: 100%;
     transition: 0.4s;
     background-repeat: no-repeat;
     background-position: bottom;
+    z-index: 2;
 }
 .mole.small {
     background-size: 50%;
