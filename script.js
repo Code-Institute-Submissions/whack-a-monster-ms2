@@ -2,7 +2,7 @@ const holes = document.querySelectorAll(".hole");
 const scoreBoard = document.querySelector(".score");
 const moles = document.querySelectorAll(".moles");
 const countDownBoard = document.querySelector(".countdown");
-const startButton = dovument.querySelector(".startButton");
+const startButton = document.querySelector(".startButton");
 
 let lastHole;
 let timeUp = false;
@@ -32,7 +32,7 @@ function popOut(){
 function startGame(){
     countdown = timeLimit/1000;
     scoreBoard.textContent = 0;
-    scoreBorad.style.display = "block";
+    scoreBoard.style.display = "block";
     countDownBoard.textContent = countdown;
     timeUp = false;
     score = 0;
@@ -42,7 +42,7 @@ function startGame(){
     }, timeLimit);
 
     let startCountdown = setInterval(function(){
-        coundown -= 1;
+        countdown -= 1;
         countDownBoard.textContent = countdown;
         if (countdown < 0) {
             countdown = 0;
@@ -52,4 +52,4 @@ function startGame(){
         }
     }, 1000)
 }
-startButton.addEventListener("click", startGame)
+startButton.addEventListener("click", startGame);
