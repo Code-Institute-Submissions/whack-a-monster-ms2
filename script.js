@@ -6,10 +6,24 @@ const startButton = document.querySelector(".startButton");
 
 let lastHole;
 let timeUp = false;
-let timeLimit = 20000;
+let timeLimit = 30000;
 let score = 0;
 let countdown;
 
+// Game screen options
+var mode; // determines wheteher the game has started 
+function setup(){
+    mode = 0;
+    createCanvas(600,400);
+    testSize(21);
+}
+function draw(){
+    if (mode == 0){
+        text("Press Enter to start", 20, 20);
+    }
+}
+
+// Game Functions
 function pickRandomHole(holes){
     const randomHole = Math.floor(Math.random()*holes.length);
     const hole = holes[randomHole];
@@ -47,10 +61,10 @@ function startGame(){
         if (countdown < 0) {
             countdown = 0;
             clearInterval(startCountdown);
-            countDownBoard.textContent = "Times UP!!!"
+            countDownBoard.textContent = "Times UP!!!";
 
         }
-    }, 1000)
+    }, 1000);
 }
 startButton.addEventListener("click", startGame);
 
@@ -61,7 +75,7 @@ function whack(e){
     setTimeout(() => {
         this.style.backgroundImage = "url(assets/img/char1.png)";
         this.style.pointerEvent = "all";
-    }, 800)
+    }, 800);
     scoreBoard.textContent = score;
 }
 moles.forEach (mole => mole.addEventListener("click", whack));

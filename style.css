@@ -7,9 +7,10 @@
 }
 body {
     font-family:  "Helvetica", "sans-serif";
+    background: url(assets/img/stars-bg.jpg);
 }
 .wrapper {
-    border: 3px solid #010124;
+    border: 3px dotted #010124;
     width: 800px;
     height: 600px;
     position: absolute;
