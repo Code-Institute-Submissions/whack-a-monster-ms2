@@ -32,6 +32,11 @@ body {
     text-align: center;
     transform: translate(-50%, -50%);
 }
+@media only screen and (max-width: 411px){
+    div.score {
+       top: 20%;
+       font-size: 75px;
+    }
 .countdown{
     position: absolute;
     top: 490px;
@@ -40,6 +45,10 @@ body {
     text-align: center;
     color: red;
 }
+@media only screen and (max-width: 411px){
+    div.countdown {
+        top: 60%;
+    }
 .startButton {
     position: absolute;
     bottom: 10px;
@@ -91,13 +100,26 @@ body {
     content:"";
     display: block;
     background-image: url("assets/img/cloud.png");
+    background-position: bottom;
     position: absolute;
     width: 100%;
     height: 130px;
     z-index: 2;
-    bottom: -30px;
+    bottom: 0;
     background-size: contain;
+    background-repeat: no-repeat;
 }
+/*@media only screen and (max-width: 360px){
+    div.hole:after {
+        width: 95%;
+        height: 47%;
+    }
+
+@media only screen and (max-width: 411px){
+    div.hole:after {
+        width: 100%;
+        height: 41%;
+    } */
 
 .mole {
     background-image: url("assets/img/char1.png");
