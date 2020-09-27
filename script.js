@@ -56,6 +56,8 @@ function startGame(){
         timeUp = true;
     }, timeLimit);
 
+
+
     let startCountdown = setInterval(function(){
         countdown -= 1;
         countDownBoard.textContent = countdown;
@@ -63,6 +65,8 @@ function startGame(){
             countdown = 0;
             clearInterval(startCountdown);
             countDownBoard.textContent = "Times UP!!!";
+            startButton.textContent = "Play again!"
+            startButton.style.display = "block";
 
         }
     }, 1000);
