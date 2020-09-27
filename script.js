@@ -47,6 +47,7 @@ function startGame(){
     countdown = timeLimit/1000;
     scoreBoard.textContent = 0;
     scoreBoard.style.display = "block";
+    startButton.style.display = "none";
     countDownBoard.textContent = countdown;
     timeUp = false;
     score = 0;
