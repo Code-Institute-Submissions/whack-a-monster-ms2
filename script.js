@@ -3,6 +3,7 @@ const scoreBoard = document.querySelector(".score");
 const moles = document.querySelectorAll(".mole");
 const countDownBoard = document.querySelector(".countdown");
 const startButton = document.querySelector(".startButton");
+const audioButton = document.getElementById("audioButton");
 
 let lastHole;
 let timeUp = false;
@@ -10,18 +11,7 @@ let timeLimit = 30000;
 let score = 0;
 let countdown;
 
-// Game screen options
-var mode; // determines wheteher the game has started 
-function setup(){
-    mode = 0;
-    createCanvas(600,400);
-    testSize(21);
-}
-function draw(){
-    if (mode == 0){
-        text("Press Enter to start", 20, 20);
-    }
-}
+
 
 // Game Functions
 function pickRandomHole(holes){
@@ -43,7 +33,10 @@ function popOut(){
     }, time);
 }
 
+var gameAudio = new Audio('assets/music/BeatThree.mp3');
+
 function startGame(){
+    gameAudio.play();
     countdown = timeLimit/1000;
     scoreBoard.textContent = 0;
     scoreBoard.style.display = "block";
@@ -65,7 +58,7 @@ function startGame(){
             countdown = 0;
             clearInterval(startCountdown);
             countDownBoard.textContent = "Times UP!!!";
-            startButton.textContent = "Play again!"
+            startButton.textContent = "RESTART GAME!";
             startButton.style.display = "block";
 
         }
@@ -73,7 +66,10 @@ function startGame(){
 }
 startButton.addEventListener("click", startGame);
 
+var smack = new Audio('assets/music/smack.mp3');
+
 function whack(e){
+    smack.play();
     score++;
     this.style.backgroundImage = "url(assets/img/char2.png)";
     this.style.pointerEvent = "none";
@@ -84,3 +80,12 @@ function whack(e){
     scoreBoard.textContent = score;
 }
 moles.forEach (mole => mole.addEventListener("click", whack));
+
+
+function switchSound(audio){
+    audio.muted = !audio.muted;
+}
+
+audioButton.addEventListener("click",  function() {
+    switchSound(gameAudio);
+});
