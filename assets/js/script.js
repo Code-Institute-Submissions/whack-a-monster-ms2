@@ -49,7 +49,7 @@ function startGame(){
         timeUp = true;
     }, timeLimit);
 
-
+// Countdown 30s
 
     let startCountdown = setInterval(function(){
         countdown -= 1;
@@ -66,11 +66,16 @@ function startGame(){
 }
 startButton.addEventListener("click", startGame);
 
-var smack = new Audio('assets/music/smack.mp3');
+// Whack function with sprites
+var smack = new Audio('assets/music/smack1.mp3');
 
 function whack(e){
+    debugger;
     smack.play();
     score++;
+    if ( score % 1 === 0) { 
+    countdown += 15;
+    }
     this.style.backgroundImage = "url(assets/img/char2.png)";
     this.style.pointerEvent = "none";
     setTimeout(() => {
@@ -78,14 +83,17 @@ function whack(e){
         this.style.pointerEvent = "all";
     }, 800);
     scoreBoard.textContent = score;
+
+
 }
 moles.forEach (mole => mole.addEventListener("click", whack));
 
+// Mute audio function
 
 function switchSound(audio){
     audio.muted = !audio.muted;
 }
 
 audioButton.addEventListener("click",  function() {
-    switchSound(gameAudio);
+    switchSound(gameAudio).loop;
 });

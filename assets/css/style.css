@@ -1,14 +1,23 @@
-/*Game Styling*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
  *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    cursor: url("assets/cursor/weapon1.jpg"), auto;
+    cursor: url("../cursor/cursor1.ani"), auto;
+}
+/*Header*/
+h1 {
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    color:#ff0000;
+    font-size: 6.5vh;
+    
 }
 body {
     font-family:  "Helvetica", "sans-serif";
-    background: url("assets/img/stars-bg.jpg"); 
+    background: url("../img/stars-bg.jpg"); 
 }
 .wrapper {
     border: 3px dotted #010124;
@@ -18,15 +27,15 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url("assets/img/stars-bg.jpg");
+    background-image: url("../img/stars-bg.jpg");
     overflow: hidden;
 }
 
 .score {
     font-size: 90px;
-    color: red;
+    color:#ff0000;
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     width: 200px;
     height: 100px;
@@ -45,7 +54,7 @@ body {
     width: 100%;
     font-size: 20px;
     text-align: center;
-    color: red;
+    color: #ff0000;
 }
 @media only screen and (max-width: 414px){
     div.countdown {
@@ -57,7 +66,7 @@ body {
     bottom: 10px;
     left: 50%;
     transform: translate(-50%, 0);
-    background: red;
+    background: #ff0000;
     color: white;
     padding: 20px 50px;
     border-radius: 5px;
@@ -92,7 +101,7 @@ body {
 .hole:after {
     content:"";
     display: block;
-    background-image: url("assets/img/cloud.png");
+    background-image: url("../img/cloud.png");
     background-position: bottom;
     position: absolute;
     width: 100%;
@@ -104,7 +113,7 @@ body {
 }
 
 .mole {
-    background-image: url("assets/img/char1.png");
+    background-image: url("../img/char1.png");
     position: absolute;
     top: 100%;
     width: 100%;
