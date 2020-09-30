@@ -13,7 +13,8 @@ let countdown;
 
 
 
-// Game Functions
+// Picking a random hole function
+
 function pickRandomHole(holes){
     const randomHole = Math.floor(Math.random()*holes.length);
     const hole = holes[randomHole];
@@ -23,6 +24,9 @@ function pickRandomHole(holes){
     lastHole = hole;
     return hole;
 }
+
+// Mole poping out function 
+
 function popOut(){
     const time = Math.random() * 1300 + 400;
     const hole = pickRandomHole(holes);
@@ -35,6 +39,7 @@ function popOut(){
 
 var gameAudio = new Audio('assets/music/BeatThree.mp3');
 
+// Start Game Function
 function startGame(){
     gameAudio.play();
     countdown = timeLimit/1000;
@@ -45,9 +50,15 @@ function startGame(){
     timeUp = false;
     score = 0;
     popOut();
-    setTimeout(function(){
-        timeUp = true;
-    }, timeLimit);
+    function isTimeUp() {
+        if (countdown <= 0){
+            timeUp = true;
+        } else {
+            setTimeout(isTimeUp, countdown * 1000);
+        }
+    }
+
+    setTimeout(isTimeUp, timeLimit);
 
 // Countdown 30s
 
@@ -66,16 +77,18 @@ function startGame(){
 }
 startButton.addEventListener("click", startGame);
 
-// Whack function with sprites
+
 var smack = new Audio('assets/music/smack1.mp3');
 
+// "Whacking" the "mole" function
 function whack(e){
     smack.play();
     score++;
-   /* This if statement needs to be tested with debugger
-    if ( score % 45 === 0) { 
-    countdown += 15;
-    } */
+    /* This if statement needs to be tested with debugger*/
+
+    if ( score % 40 === 0) { 
+    countdown += 10;
+    timeLimit += 10000} 
     this.style.backgroundImage = "url(assets/img/char2.png)";
     this.style.pointerEvent = "none";
     setTimeout(() => {
@@ -95,5 +108,7 @@ function switchSound(audio){
 }
 
 audioButton.addEventListener("click",  function() {
-    switchSound(gameAudio).loop;
+    switchSound(gameAudio);
+    switchSound(smack);
 });
+ gameAudio.loop = true;

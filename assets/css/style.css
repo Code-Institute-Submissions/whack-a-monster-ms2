@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+ 
  *{
     padding: 0;
     margin: 0;
@@ -133,29 +134,6 @@ body {
     top:0;
 }
 
-/*Footer*/
-footer {
-    position:fixed;
-    bottom:0;
-    left:0;
-    text-align: center;
-} 
-#footer-details h5 {
-    font-family: "Gloria Hallelujah", cursive;
-    letter-spacing: 1px;
-    font-weight: 400;
-}
-
-
-ul {
-    list-style-type: none;
-}
-
-
-.link a {
-    color: #fff;
-    text-align: center;
-}
 
 /* Nav bar Modules*/
 .instructions {
@@ -192,4 +170,23 @@ input#audioButton:checked ~ .mute img {
 /* Container Styling*/
 .my-container {
     padding: 1rem;
+}
+
+/* Instructions Modal */
+
+#modalButton {
+    background-color: #ff0000;
+}
+
+#modalStyle {
+   
+    background-color: none;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.modal-header {
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    color:#ff0000;
+    font-size: 1.5rem;
 }

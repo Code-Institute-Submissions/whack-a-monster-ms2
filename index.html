@@ -18,7 +18,7 @@
 <div class = "container-fluid my-container">
 <div class = "row">
 <!--Header-->
-<div class = "col-10">
+<div class = "col-10 col-md-6 col-sm-4">
 <h1>Whack-a-Monster</h1>
 </div>
 <!--Mute/Unmute audio button-->
@@ -34,7 +34,7 @@
 <!--Instructions modal from Bootsrap-->
 <!-- Button trigger modal -->
 <div class= "col-1">
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+<button type="button" id = "modalButton" class="btn" data-toggle="modal" data-target="#exampleModalCenter">
   <i class="far fa-question-circle"></i>
 </button>
 
@@ -48,8 +48,11 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-       Whack as many monsters as you can in the 30s. Use the right mouse click for that. 
+      <div class="modal-body" id = "modalStyle">
+      <i class="fab fa-optin-monster">Whack as many monsters as you can in the 30s and earn points with every succesful hit</i>
+      <i class="fab fa-optin-monster">Use the right mouse click for that </i>
+      <i class="fab fa-optin-monster">Multiclick on the monsters before they disapear for extra points</i>
+      <i class="fab fa-optin-monster"> Every time you earn 40 points before the timer runs out you get extra 10s to keep playing</i>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -99,41 +102,7 @@
     </div>
   </body>
 
-  <!--Footer-->
-  <footer class="container-fluid">
-   <!-- <div id="footer-details" class="row">
-      <div class="col-12">
-        <h5 class="footer-header">
-          <i class="fa fa-copyright" aria-hidden="true"></i> Dovile K
-        </h5>
-        <ul class="list-inline social-links">
-          <li class="link">
-            <a href="https://github.com/dovi-k" target="_blank">
-              <i class="fa fa-github"></i>
-              <span class="sr-only">github</span>
-            </a>
-          </li>
-          <li class="link">
-            <a
-              href="https://www.linkedin.com/in/dovile-krasnickaite-5a433376/"
-              target="_blank"
-            >
-              <i class="fa fa-linkedin"></i>
-              <span class="sr-only">linkedin</span>
-            </a>
-          </li>
-          <li class="link">
-            <a
-              href="https://www.instagram.com/dovile.dovi/?hl=en"
-              target="_blank"
-            >
-              <i class="fa fa-instagram"></i>
-              <span class="sr-only">instagram</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div> -->
+  <footer>
     <script src="assets/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
