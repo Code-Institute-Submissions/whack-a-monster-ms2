@@ -70,12 +70,12 @@ startButton.addEventListener("click", startGame);
 var smack = new Audio('assets/music/smack1.mp3');
 
 function whack(e){
-    debugger;
     smack.play();
     score++;
-    if ( score % 1 === 0) { 
+   /* This if statement needs to be tested with debugger
+    if ( score % 45 === 0) { 
     countdown += 15;
-    }
+    } */
     this.style.backgroundImage = "url(assets/img/char2.png)";
     this.style.pointerEvent = "none";
     setTimeout(() => {

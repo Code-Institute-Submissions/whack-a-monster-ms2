@@ -15,12 +15,25 @@
     <link rel="stylesheet" href="assets/css/style.css"/>
   </head>
   <body>
-
+<div class = "container-fluid my-container">
+<div class = "row">
 <!--Header-->
+<div class = "col-10">
 <h1>Whack-a-Monster</h1>
-
+</div>
+<!--Mute/Unmute audio button-->
+<div class = "audioButtonSize col-1">
+<input type="checkbox" name="un-mute" id="audioButton">
+<label for="audioButton" class="unmute">
+    <img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/Mute_Icon.svg" alt="Mute_Icon.svg" title="Mute icon">
+</label>
+<label for="audioButton" class="mute">
+    <img src="http://upload.wikimedia.org/wikipedia/commons/2/21/Speaker_Icon.svg" alt="Speaker_Icon.svg" title="Unmute/speaker icon">
+</label>
+</div>
 <!--Instructions modal from Bootsrap-->
 <!-- Button trigger modal -->
+<div class= "col-1">
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
   <i class="far fa-question-circle"></i>
 </button>
@@ -44,12 +57,10 @@
     </div>
   </div>
 </div>
-<!--Mute/Unmute audio button-->
-<div>
-<button type="button" id="audioButton">AUDIO</button>
 </div>
 
-
+</div>
+</div>
     <!--Game Wrapper-->
   <div class="wrapper">
 

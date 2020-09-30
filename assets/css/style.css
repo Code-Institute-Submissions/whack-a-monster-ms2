@@ -15,6 +15,9 @@ h1 {
     font-size: 6.5vh;
     
 }
+
+/*Game board Styling*/
+
 body {
     font-family:  "Helvetica", "sans-serif";
     background: url("../img/stars-bg.jpg"); 
@@ -90,7 +93,7 @@ body {
         height: 55vh;
     }
 }
-
+/* Hole and mole styling */
 .hole {
     flex: 1 0 33.33%;
     position: relative;
@@ -161,4 +164,32 @@ ul {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
+}
+
+/* Mute/unmute button */
+input#audioButton {
+  display: none;
+}
+
+.unmute img {
+  display: none;  
+}
+
+input#audioButton:checked ~ .unmute img {
+  display: initial;
+}
+
+input#audioButton:checked ~ .mute img {
+  display: none;
+}
+
+
+.audioButtonSize img {
+     width: 40px;
+    height: 40px;
+    background-color: #ff0000;
+}
+/* Container Styling*/
+.my-container {
+    padding: 1rem;
 }
