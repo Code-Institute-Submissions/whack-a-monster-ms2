@@ -17,8 +17,8 @@
   - <a href="#ux-stories">User stories</a>
   - <a href="#ux-wireframes">Wireframes</a>
   - <a href="#ux-design">Design</a>
-- <a href="#features">Features</a>
 - <a href="#code">Code sourses</a>
+- <a href="#features">Features</a>
   - <a href="#features-current">Current</a>
   - <a href="#features-future">Future</a>
 - <a href="#technologies">Technologies Used</a>
@@ -143,6 +143,15 @@ it is called Beat Three. It has Techno/Futuristic feel to it.
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
 
+<span id="code"></span>
+
+## Code Sources
+
+### Code I used from other sources
+
+- [Franks Laboratory](https://www.youtube.com/watch?v=RTb8icFiSfk&t=289s&ab_channel=Frankslaboratory)
+inpiration adn the main game functions along with some styling parameters were taken from this tutorial.
+- Mute/Unmute button [Stack Overflow](https://stackoverflow.com/questions/22918220/how-to-create-a-only-mute-unmute-button-like-youtube-in-html)
 <span id="features"></span>
 
 ## Features

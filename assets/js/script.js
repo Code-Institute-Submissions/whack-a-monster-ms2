@@ -84,8 +84,6 @@ var smack = new Audio('assets/music/smack1.mp3');
 function whack(e){
     smack.play();
     score++;
-    /* This if statement needs to be tested with debugger*/
-
     if ( score % 40 === 0) { 
     countdown += 10;
     timeLimit += 10000} 
