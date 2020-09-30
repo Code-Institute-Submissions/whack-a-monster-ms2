@@ -84,7 +84,7 @@ var smack = new Audio('assets/music/smack1.mp3');
 function whack(e){
     smack.play();
     score++;
-    if ( score % 40 === 0) { 
+    if ( score % 35 === 0) { 
     countdown += 10;
     timeLimit += 10000} 
     this.style.backgroundImage = "url(assets/img/char2.png)";

@@ -150,8 +150,11 @@ it is called Beat Three. It has Techno/Futuristic feel to it.
 ### Code I used from other sources
 
 - [Franks Laboratory](https://www.youtube.com/watch?v=RTb8icFiSfk&t=289s&ab_channel=Frankslaboratory)
-inpiration adn the main game functions along with some styling parameters were taken from this tutorial.
+inpiration and the main game functions along with some styling parameters were taken from this tutorial.
 - Mute/Unmute button [Stack Overflow](https://stackoverflow.com/questions/22918220/how-to-create-a-only-mute-unmute-button-like-youtube-in-html)
+- [Bootstrap modal](www.getbootrap.com) the modal used for the instructions
+- README.md file structure inspired some code taken from [Edb83](https://github.com/Edb83/snake) project
+
 <span id="features"></span>
 
 ## Features
@@ -236,13 +239,6 @@ Many hours were spent testing Whack-a-Monster throughout its development. Over s
 
 ### Responsiveness
 
-The aim was to make a game which felt like a standalone app, but which would display in the browser and not force a particular orientation on the player. It was a challenge to achieve this without using some practices which are frowned upon in mobile web development, however they were necessary to achieve said goals.
-
-To overcome the limitations of the mobile browser, a feature of HammerJS has been exploited via `prevent_default: true, touchAction: "none"` and used on `body` so that scrolling or clicking on DOM elements is not possible. Additionally, `pointer-events: none` is used on `game-container` to prevent accidental zooming in on elements when playing on mobile, which happens very frequently on iOS Safari.
-
-`em` units have been used throughout the style sheet (apart from in the `glow` heading class), and incremented in media queries.
-
-There may be some devices which cannot fit the content on screen and as a result push the menu buttons too close to the bottom, however no examples came up in real-world or dev-tools testing.
 
 #### Browsers
 
@@ -300,7 +296,7 @@ Real world testing on:
 
 ## Deployment
 
-I was wokring on one branch (master) and the deployed version of this site is the most current version in the repository.
+I was working on one branch (master) and the deployed version of this site is the most current version in the repository.
 
 
 To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/Edb83/snake), I took the following steps:
@@ -335,7 +331,7 @@ Further reading and troubleshooting on cloning a repository from GitHub can be f
 
 ## Credits
 
-#### Tutorials and inspiration
+#### Inspiration
 
 - [Youtube: Code The Snake Game Using JavaScript and HTML5](https://youtu.be/9TcU2C1AACw)
 -
@@ -357,7 +353,7 @@ Further reading and troubleshooting on cloning a repository from GitHub can be f
 ### Acknowledgements
 
 - Precious Iljege (Code Institute Mentor) - for his reassurance, support and guidance
-
+- Tutors Tim, Miklos, Scott - for support
 
 
 ### Disclaimer
