@@ -200,7 +200,15 @@ input#audioButton:checked ~ .mute img {
 }
 
 /* Instructions Modal */
+.modal {
+    z-index: 15000;
+}
+.modal-backdrop {
+    z-index: 10000;
+}
 #modalButton {
+    position: relative;
+    z-index: 15000;
   background-color: #ff0000;
 }
 
