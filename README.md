@@ -45,11 +45,14 @@ This game is for all ages. It will definetly challenge you and test your focus a
 
 The game is simple:
 
-- Hit as many pink monsters as you can in 30 second using the right mouse click, earn points with every hit.
-- You can multiclick on the  monsters for extra points before they disapear
+- Hit as many pink monsters as you can in 30 second using the right mouse click, earn points with every click.
+- You can multiclick on the  monsters for extra points before they disapear.
 - If you reach 35 points before the times runs out you get additional 10 seconds, keep collecting
-35 points to keep playing, try to beat your score every time.
+35 points to keep playing before time runs out.
 
+Since there are no extra levels to this game, I made it harder. So that it would take your full focus
+to keep earning the points and feel challenged to get the next 35 points before the timer runs out.
+You snooze you looze!
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
 <span id="ux"></span>
@@ -64,7 +67,7 @@ The game has been designed with no 'fluff' to distract players from having some 
 
 - Mobile-first
 - Customisable code
-- Simplicitys.
+- Simplicity
 - Intuitive navigation
 - Crisp controls
 - Satisfying feedback
