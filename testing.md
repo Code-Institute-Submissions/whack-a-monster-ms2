@@ -52,3 +52,27 @@ the buttons, stacked slighty on top of each other in the right corner.
 when I pressed "Start!! and started playing the game. "Smack" sound worked from the start.
 
 ## Testing User Stories
+
+1. As a user, I want easy controls
+   - Simple layout of the game board
+   - I can play clicking one mouse button
+   - I can turn off/on sound with one clicking
+   - Instructions are on click away
+
+2. As a user, I want to feel entertained
+   - The game is faced paced and there is no break to take once it's running, so it's funny, easy and takes
+   your ind from overthinking.
+
+3. As a user, I want to feel challenged
+   - The pace of the monsters poping out keeps you focused and on point
+
+4. As a user, I want to have satisfying audio and visuals
+  - When you fisrt enter the site you are preseted with 
+- As a user, I want to have a clear way how to start and restart a game when the game ends
+- As a user, I want to see my progression in the game by keeping the score
+- As a user, I want to feel motivated to keep playing 
+
+#### As a developer/site owner I want:
+
+- To be able to customise the look and feel of the game easily
+- To keep players entertained and coming back to my website

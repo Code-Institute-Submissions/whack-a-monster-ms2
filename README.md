@@ -19,14 +19,11 @@
   - <a href="#ux-design">Design</a>
 
 - <a href="#features">Features</a>
-  - <a href="#features-current">Current</a>
-  - <a href="#features-future">Future</a>
 - <a href="#technologies">Technologies Used</a>
 - <a href="#testing">Testing</a>
   - <a href="#testing-auto">Automated</a>
   - <a href="#testing-manual">Manual</a>
   - <a href="#testing-responsive">Responsiveness</a>
-  - <a href="#testing-resolved">Resolved issues</a>
   - <a href="#testing-unresolved">Unresolved issues</a>
 - <a href="#deployment">Deployment</a>
 - <a href="#code">Code sourses</a>
@@ -63,15 +60,23 @@ You snooze you looze!
 
 ### Overview
 
-The game has been designed with no 'fluff' to distract players from having some fun. All design decisions have been made with the following goals in mind:
+Design decisions have been made with the following goals in mind:
 
 - Mobile-first
-- Customisable code
 - Simplicity
 - Intuitive navigation
-- Crisp controls
+- Easy controls
 - Satisfying feedback
-- Replayability
+- Replayable
+
+
+I've asked couple of my friends to play the game and leave first impressions:
+
+- Friend1: "It's more difficult that it seems. Oh Actually it's great fun!"
+- Friend2: "It's great! I played it on my phone. Such a trip down memory lane playing these kind of 
+games. The only thing that kept happening when I was double tapping the monsters
+my screen would zoom in"
+- Friend3: 
 
 <span id="ux-stories"></span>
 
@@ -79,13 +84,13 @@ The game has been designed with no 'fluff' to distract players from having some 
 
 #### As a player I want:
 
-- As a player, I want easy controls
-- As a player, I want to feel entertained
-- As a player, I want to feel challenged
-- As a player, I want to have satisfying audio and visuals
-- As a player, I want to have a clear way how to start and restart a game when the game ends
-- As a player, I want to see my progression in the game by keeping the score
-- As a player, I want to feel motivated to keep playing 
+- As a user, I want easy controls
+- As a user, I want to feel entertained
+- As a user, I want to feel challenged
+- As a user, I want to have satisfying audio and visuals
+- As a user, I want to have a clear way how to start and restart a game when the game ends
+- As a user, I want to see my progression in the game by keeping the score
+- As a user, I want to feel motivated to keep playing 
 
 #### As a developer/site owner I want:
 
@@ -183,8 +188,6 @@ visuals I would like to create. I play this game myslef sometimes.
 
 ## Features
 
-<span id="features-current"></span>
-
 
 ### Features I would like to implement in the future
 
@@ -244,20 +247,31 @@ completely loosing their progress
 
 [W3C - HTML](https://validator.w3.org/) - 0 errors, 0 warnings - **PASS**
 
-[W3C - CSS](https://jigsaw.w3.org/css-validator/) - 0 errors,  warnings - **PASS**
+[W3C - CSS](https://jigsaw.w3.org/css-validator/) - 0 errors, 2 warnings - **PASS**
 
-- 
-- 
+- Imported style sheets are not checked in direct input and file upload modes
+- Imported style sheets are not checked in direct input and file upload modes
 
-[CSS Lint](http://csslint.net/) - 0 errors,  warnings - **PASS**
+[JS Hint](https://jshint.com/) - 0 errors,  18 warnings - **PASS**
 
-
-
-
-[Unicorn revealer - overflow](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln/related) - no evidence of overflow - **PASS**
-
-[JS Hint](https://jshint.com/) - 0 errors,  warnings - **PASS**
-
+1	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+2	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+3	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+4	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+5	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+6	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+8	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+9	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+10	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+11	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+12	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+17	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+18	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+29	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+30	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+64	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+92	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+99	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
 
 <span id="testing-manual"></span>
 
@@ -265,17 +279,23 @@ completely loosing their progress
 
 **Summary**:
 
-Many hours were spent testing Whack-a-Monster throughout its development. Over several thousand games, the following scenarios were successfully tested:
-
+I've spend hours spent testing Whack-a-Monster throughout
+its development. I may have not ducomented every single one of the tests.
+I haven't htoroughly documented most of my test. I have worked quite a lot on Responsiveness
+even though the result is still far from being perfect.
+A lot of tests were caried out to test the JS functions for the game.
 
 
 <span id="testing-responsive"></span>
 
-### Responsiveness
+### Responsiveness 
+
+I have written more about the responsiveness issues i've been facing while trying to 
+finsih up my project more in detai in the [Testing file](testing.md)
 
 - I wasn't able to test the XL screens as I was not an owner of one, the only time that I got to see it, was through
 my and my mentor screenshare, however I've added extra media query hoping that that would solve the issue,
-ehich was the score siapearing behind the lower row middle cloud.
+ehich was the score is apearing behind the lower row middle cloud.
 
 
 #### Browsers
