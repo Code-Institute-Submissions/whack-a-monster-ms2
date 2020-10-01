@@ -334,20 +334,24 @@ Tested with Chrome DevTools using profiles for:
 Real world testing on:
 
 - Samsung Galaxy S8
-- HP 
+- HP 18' Laptop
 
 
 ### Issues and resolutions
 
-<span id="testing-resolved"></span>
-
-#### Resolved
-
+<span id="testing-unresolved"></span>
 
 
 #### Unresolved
+* Music gets delayed depending on the browser or the device few second.
+* The Information button is not responsive
+* The mute button doesn't resize properly and both buttons on different sizes
+gets out of alignment
+* Score gets hidden on medium-large screens behind the clouds
+* start button doesn't resize properly on small screens, part of it might get hidden on vbery small screens.
 
--
+
+
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
 
 <span id="deployment"></span>
@@ -434,7 +438,8 @@ visuals I would like to create. I play this game myslef sometimes.
 ### Acknowledgements
 
 - Precious Iljege (Code Institute Mentor) - for his reassurance, support and guidance
-- Tutors Tim, Miklos, Scott - for support and dedication helping me to debug my code.
+- Tutors Tim, Miklos, Johann, Scott - for support and dedication helping me to debug my code and helping me to move forward
+with project, when I would end up in  a blind spot.
 - Alex Bitar, my friend, who kept me motivated and supported me through my stuggle with JavaScript
 
 
