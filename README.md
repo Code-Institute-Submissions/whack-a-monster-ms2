@@ -20,9 +20,6 @@
 
 - <a href="#features">Features</a>
 - <a href="#technologies">Technologies Used</a>
-- <a href="#testing">Testing</a>
-  - <a href="#testing-auto">Automated</a>
-  - <a href="#testing-manual">Manual</a>
   - <a href="#testing-responsive">Responsiveness</a>
   - <a href="#testing-unresolved">Unresolved issues</a>
 - <a href="#deployment">Deployment</a>
@@ -253,7 +250,7 @@ completely loosing their progress
 - Imported style sheets are not checked in direct input and file upload modes
 
 [JS Hint](other/JSval.jpg) - 0 errors,  18 warnings - **PASS**
-
+I've added screenshot of the warnings. In future release I would clear the warnings. Likewise for CSS.
 
 <span id="testing-manual"></span>
 
