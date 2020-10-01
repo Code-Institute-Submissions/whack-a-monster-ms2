@@ -67,12 +67,21 @@ when I pressed "Start!! and started playing the game. "Smack" sound worked from 
    - The pace of the monsters poping out keeps you focused and on point
 
 4. As a user, I want to have satisfying audio and visuals
-  - When you fisrt enter the site you are preseted with 
-- As a user, I want to have a clear way how to start and restart a game when the game ends
-- As a user, I want to see my progression in the game by keeping the score
-- As a user, I want to feel motivated to keep playing 
+  - When you fisrt enter the site you are preseted with with the deep blue 
+  space image. All the colours nicely contrast. Most of the things alighn.
+
+5.  As a user, I want to have a clear way how to start and restart a game when the game ends
+ -There is a big 
+6. As a user, I want to see my progression in the game by keeping the score
+- For every successful hit or additional hits you make you get extra points. 
+-
+7. As a user, I want to feel motivated to keep playing 
+Thre is an adrenaline rush that gets you speeding through the game and wanting to keep this going and to test your metal.
 
 #### As a developer/site owner I want:
 
-- To be able to customise the look and feel of the game easily
-- To keep players entertained and coming back to my website
+1. To be able to customise the look and feel of the game easily
+  - The game functionality and layout is easy to maintain
+2. To keep players entertained and coming back to my website
+  - It is an easy game for perfect when you just want to turn off your thinking mind and 
+  enjoy a game whee you dont need to overthink. 

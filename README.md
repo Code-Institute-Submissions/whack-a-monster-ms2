@@ -1,7 +1,7 @@
 # Whack-a-Monster
 
 
-![alt text](# "Responsive sample")
+![alt text](other/resp.jpg "Responsive sample")
 
 **[Live demo](https://dovi-k.github.io/whack-a-monster-ms2/.)**
 
@@ -198,7 +198,7 @@ for the timer to run out or hit refresh to start a new game. (that woudl make th
 - I would like to impelment having 3 game lives, so the player  could save points and keep building on them without 
 completely loosing their progress
 - I would like to implemment High-Score board, so the players could see how well they're doing compared to others
-- 
+
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
 
@@ -245,33 +245,15 @@ completely loosing their progress
 
 
 
-[W3C - HTML](https://validator.w3.org/) - 0 errors, 0 warnings - **PASS**
+[W3C - HTML](other/Htmlval.jpg) - 0 errors, 0 warnings - **PASS** 
 
-[W3C - CSS](https://jigsaw.w3.org/css-validator/) - 0 errors, 2 warnings - **PASS**
+[W3C - CSS](other/CSSval.jpg) - 0 errors, 2 warnings - **PASS**
 
 - Imported style sheets are not checked in direct input and file upload modes
 - Imported style sheets are not checked in direct input and file upload modes
 
-[JS Hint](https://jshint.com/) - 0 errors,  18 warnings - **PASS**
+[JS Hint](other/JSval.jpg) - 0 errors,  18 warnings - **PASS**
 
-1	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-2	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-3	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-4	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-5	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-6	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-8	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-9	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-10	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-11	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-12	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-17	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-18	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-29	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-30	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-64	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
-92	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
-99	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
 
 <span id="testing-manual"></span>
 
@@ -349,8 +331,9 @@ Real world testing on:
 gets out of alignment
 * Score gets hidden on medium-large screens behind the clouds
 * start button doesn't resize properly on small screens, part of it might get hidden on vbery small screens.
-
-
+* bug reported by the user "sometimes double taps in the touch screen devices zoom in the screen" 
+* restart button is missing in the game if you started a game you need to refresh the page
+or wait until the timer runs out
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
 
@@ -389,6 +372,7 @@ Further reading and troubleshooting on cloning a repository from GitHub can be f
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
 
+<span id="credits"></span>
 <span id="code"></span>
 
 ## Code Sources
@@ -416,17 +400,6 @@ visuals I would like to create. I play this game myslef sometimes.
 - [KnifeCircus youtube channel](https://www.youtube.com/watch?v=bG2BmmYr9NQ&ab_channel=KnifeCircus)-endless runner game
 - [Flappy Bird](https://www.youtube.com/watch?v=3SsYZDJdeXk&t=134s&ab_channel=KnifeCircus)
 - [FranksLabaratory](https://www.youtube.com/watch?v=lGJ9i6CYKyQ&ab_channel=Frankslaboratory)- flappy bird
-<span id="credits"></span>
-
-## Credits
--
-#### Code used/modified from other sources
-
-(also referenced within code files)
-
-- [Random number between (min, max)](https://stackoverflow.com/questions/4959975/generate-random-number-between-two-numbers-in-javascript)
-- [Seconds to hours/minutes/seconds convertor](https://stackoverflow.com/questions/37096367/how-to-convert-seconds-to-minutes-and-hours-in-javascript/37096923)
-- [Sorting arrays](https://www.javascripttutorial.net/javascript-array-sort/)
 
 
 ### Content
@@ -439,7 +412,7 @@ visuals I would like to create. I play this game myslef sometimes.
 
 - Precious Iljege (Code Institute Mentor) - for his reassurance, support and guidance
 - Tutors Tim, Miklos, Johann, Scott - for support and dedication helping me to debug my code and helping me to move forward
-with project, when I would end up in  a blind spot.
+with project, when I would end up in a blind spot.
 - Alex Bitar, my friend, who kept me motivated and supported me through my stuggle with JavaScript
 
 
