@@ -54,10 +54,11 @@ body {
 
 @media only screen and (min-width: 1450px) {
   div.score {
-    top: 30%;
+    top: 13%;
     font-size: 75px;
   }
 }
+
 .countdown {
   position: absolute;
   top: 490px;
@@ -92,8 +93,7 @@ body {
 @media only screen and (max-width: 414px) {
    .startButton{
     padding: 10px 15px;
-    margin: 10px;
-    top: 70%;
+    top: 87%;
   }
 }
 

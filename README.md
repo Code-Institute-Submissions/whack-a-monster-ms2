@@ -183,8 +183,16 @@ visuals I would like to create. I play this game myslef sometimes.
 <span id="features-current"></span>
 
 
-### Features to be implemented
--
+### Features I would like to implement in the future
+
+- I would like to implement restart game button, so you owuldn't have to wait
+for the timer to run out or hit refresh to start a new game. (that woudl make the game more user friendly)
+- I would like to add different difficulty levels Easy/Medium/Hard and be able to adjust the speed of the game accordingly
+- I would like to have implement different levels of the so the player could be progressing
+- I would like to impelment having 3 game lives, so the player  could save points and keep building on them without 
+completely loosing their progress
+- I would like to implemment High-Score board, so the players could see how well they're doing compared to others
+- 
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
 
@@ -366,6 +374,7 @@ inpiration and the main game functions along with some styling parameters were t
 - Mute/Unmute button [Stack Overflow](https://stackoverflow.com/questions/22918220/how-to-create-a-only-mute-unmute-button-like-youtube-in-html)
 - [Bootstrap modal](www.getbootrap.com) the modal used for the instructions
 - README.md file structure inspired some code taken from [Edb83](https://github.com/Edb83/snake) project
+- README.md and test.md file structure inspired by [Andy Osbourne "Dwarf Match"](https://github.com/Andy-Osborne/Dwarf-Match)
 
 ### Student projects that inspired me
 - [Andy Osbourne "Dwarf Match"](https://github.com/Andy-Osborne/Dwarf-Match) - great fun, project, with beautiful visuals, different
