@@ -1,147 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
- 
- *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    cursor: url("../cursor/cursor1.ani"), auto;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 /*Header*/
 h1 {
-    text-align: center;
-    font-family: 'Bangers', cursive;
-    color:#ff0000;
-    font-size: 6.5vh;
-    
+  text-align: center;
+  font-family: "Bangers", cursive;
+  color: #ff0000;
+  font-size: 6.5vh;
 }
 
 /*Game board Styling*/
-
 body {
-    font-family:  "Helvetica", "sans-serif";
-    background: url("../img/stars-bg.jpg"); 
+  font-family: "Helvetica", "sans-serif";
+  background: url("../img/stars-bg.jpg");
 }
+
 .wrapper {
-    border: 3px dotted #010124;
-    width: 85%;
-    height: 80%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url("../img/stars-bg.jpg");
-    overflow: hidden;
+  border: 3px dotted #010124;
+  width: 85%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/stars-bg.jpg");
+  overflow: hidden;
 }
 
 .score {
-    font-size: 90px;
-    color:#ff0000;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200px;
-    height: 100px;
-    text-align: center;
-    transform: translate(-50%, -50%);
+  font-size: 90px;
+  color: #ff0000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
-@media only screen and (max-width: 414px){
-    div.score {
-       top: 20%;
-       font-size: 75px;
-    }
+
+@media only screen and (max-width: 414px) {
+  div.score {
+    top: 20%;
+    font-size: 75px;
+  }
 }
-.countdown{
-    position: absolute;
-    top: 490px;
-    width: 100%;
-    font-size: 20px;
-    text-align: center;
-    color: #ff0000;
+
+@media only screen and (min-width: 1450px) {
+  div.score {
+    top: 30%;
+    font-size: 75px;
+  }
 }
-@media only screen and (max-width: 414px){
-    div.countdown {
-        top: 60%;
-    }
+.countdown {
+  position: absolute;
+  top: 490px;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  color: #ff0000;
 }
+
+@media only screen and (max-width: 414px) {
+  div.countdown {
+    top: 60%;
+  }
+}
+
+/*Start Button*/
 .startButton {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background: #ff0000;
-    color: white;
-    padding: 20px 50px;
-    border-radius: 5px;
-    z-index: 200;
-    cursor: pointer;
-    border: none;
-    outline: none;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: #ff0000;
+  color: white;
+  padding: 20px 50px;
+  border-radius: 5px;
+  z-index: 200;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+@media only screen and (max-width: 414px) {
+   .startButton{
+    padding: 10px 15px;
+    margin: 10px;
+  }
 }
 
 .game {
-    width: 600px;
-    height: 400px;
-    margin: 70px auto;
-    z-index: 200;
-    display: flex;
-    flex-wrap: wrap;
-}
-@media only screen and (max-width: 768px){
-    div.game {
-        width: 80vw;
-        height: 55vh;
-    }
-}
-/* Hole and mole styling */
-.hole {
-    flex: 1 0 33.33%;
-    position: relative;
-    overflow: hidden;
+  width: 600px;
+  height: 400px;
+  margin: 70px auto;
+  z-index: 200;
+  display: flex;
+  flex-wrap: wrap;
 }
 
+@media only screen and (max-width: 768px) {
+  div.game {
+    width: 80vw;
+    height: 55vh;
+  }
+}
+
+/* Holes and moles styling */
+.hole {
+  flex: 1 0 33.33%;
+  position: relative;
+  overflow: hidden;
+}
 
 .hole:after {
-    content:"";
-    display: block;
-    background-image: url("../img/cloud.png");
-    background-position: bottom;
-    position: absolute;
-    width: 100%;
-    height: 130px;
-    z-index: 2;
-    bottom: 0;
-    background-size: contain;
-    background-repeat: no-repeat;
+  content: "";
+  display: block;
+  background-image: url("../img/cloud.png");
+  background-position: bottom;
+  position: absolute;
+  width: 100%;
+  height: 130px;
+  z-index: 2;
+  bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .mole {
-    background-image: url("../img/char1.png");
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    height: 100%;
-    transition: 0.3s;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    z-index: 3;
+  background-image: url("../img/char1.png");
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  z-index: 3;
 }
 .mole.small {
-    background-size: 50%;
+  background-size: 50%;
 }
 .hole.up .mole {
-    top:0;
-}
-
-
-/* Nav bar Modules*/
-.instructions {
-    position: absolute;
-     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
+  top: 0;
 }
 
 /* Mute/unmute button */
@@ -150,7 +157,7 @@ input#audioButton {
 }
 
 .unmute img {
-  display: none;  
+  display: none;
 }
 
 input#audioButton:checked ~ .unmute img {
@@ -161,32 +168,28 @@ input#audioButton:checked ~ .mute img {
   display: none;
 }
 
-
 .audioButtonSize img {
-     width: 40px;
-    height: 40px;
-    background-color: #ff0000;
+  width: 4vw;
+  background-color: #ff0000;
 }
+
 /* Container Styling*/
 .my-container {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 /* Instructions Modal */
-
 #modalButton {
-    background-color: #ff0000;
+  background-color: #ff0000;
 }
 
-#modalStyle {
-   
-    background-color: none;
-    font-family: 'Architects Daughter', cursive;
+#modalStyle i {
+  font-size: 1.5rem;
 }
 
 .modal-header {
-    text-align: center;
-    font-family: 'Bangers', cursive;
-    color:#ff0000;
-    font-size: 1.5rem;
+  text-align: center;
+  font-family: "Bangers", cursive;
+  color: #ff0000;
+  font-size: 1.8rem;
 }

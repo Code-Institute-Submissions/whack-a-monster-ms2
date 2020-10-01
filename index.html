@@ -4,69 +4,116 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Whack-A-Monster Game</title>
-    
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
       integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-<div class = "container-fluid my-container">
-<div class = "row">
-<!--Header-->
-<div class = "col-10 col-md-6 col-sm-4">
-<h1>Whack-a-Monster</h1>
-</div>
-<!--Mute/Unmute audio button-->
-<div class = "audioButtonSize col-1">
-<input type="checkbox" name="un-mute" id="audioButton">
-<label for="audioButton" class="unmute">
-    <img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/Mute_Icon.svg" alt="Mute_Icon.svg" title="Mute icon">
-</label>
-<label for="audioButton" class="mute">
-    <img src="http://upload.wikimedia.org/wikipedia/commons/2/21/Speaker_Icon.svg" alt="Speaker_Icon.svg" title="Unmute/speaker icon">
-</label>
-</div>
-<!--Instructions modal from Bootsrap-->
-<!-- Button trigger modal -->
-<div class= "col-1">
-<button type="button" id = "modalButton" class="btn" data-toggle="modal" data-target="#exampleModalCenter">
-  <i class="far fa-question-circle"></i>
-</button>
+    <div class="container-fluid my-container">
+      <div class="row">
+        <!--Header-->
+        <div class="col-10 col-md-10 col-sm-8">
+          <h1>Whack-a-Monster</h1>
+        </div>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Instructions</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body" id = "modalStyle">
-      <i class="fab fa-optin-monster">Whack as many monsters as you can in the 30s and earn points with every succesful hit</i>
-      <i class="fab fa-optin-monster">Use the right mouse click for that </i>
-      <i class="fab fa-optin-monster">Multiclick on the monsters before they disapear for extra points</i>
-      <i class="fab fa-optin-monster"> Every time you earn 40 points before the timer runs out you get extra 10s to keep playing</i>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!--Mute/Unmute audio button-->
+        <div class="audioButtonSize col-1 col-md-3 col-sm-2">
+          <input type="checkbox" name="un-mute" id="audioButton" />
+          <label for="audioButton" class="unmute">
+            <img
+              src="http://upload.wikimedia.org/wikipedia/commons/3/3f/Mute_Icon.svg"
+              alt="Mute_Icon.svg"
+              title="Mute icon"
+            />
+          </label>
+          <label for="audioButton" class="mute">
+            <img
+              src="http://upload.wikimedia.org/wikipedia/commons/2/21/Speaker_Icon.svg"
+              alt="Speaker_Icon.svg"
+              title="Unmute/speaker icon"
+            />
+          </label>
+        </div>
+
+        <!--Instructions modal from Bootsrap/Button trigger modal -->
+        <div class="col-1 col-md-1 col-sm-2">
+          <button
+            type="button"
+            id="modalButton"
+            class="btn"
+            data-toggle="modal"
+            data-target="#exampleModalCenter"
+          >
+            <i class="far fa-question-circle"></i>
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">
+                    Instructions
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" id="modalStyle">
+                  <i class="fab fa-optin-monster"
+                    >Whack as many monsters as you can in 30s and earn
+                    points with every successful hit</i
+                  >
+                  <i class="fab fa-optin-monster"
+                    >Use the right mouse click for that
+                  </i>
+                  <i class="fab fa-optin-monster"
+                    >Multiclick on the monsters before they disapear for extra
+                    points</i
+                  >
+                  <i class="fab fa-optin-monster">
+                    Every time you earn 35 points before the timer runs out you
+                    get extra 10s to keep playing</i
+                  >
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-</div>
-
-</div>
-</div>
     <!--Game Wrapper-->
-  <div class="wrapper">
-
+    <div class="wrapper">
       <!--Game Score-->
       <div class="score">0</div>
 
@@ -77,12 +124,10 @@
       <button class="startButton">Start!</button>
 
       <div class="game">
-
         <!--Game "moles" and "holes"-->
         <div class="hole hole1">
           <div class="mole small"></div>
         </div>
-
         <div class="hole hole2">
           <div class="mole small"></div>
         </div>
@@ -101,12 +146,22 @@
       </div>
     </div>
   </body>
-
   <footer>
     <script src="assets/js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </footer>
-  
 </html>

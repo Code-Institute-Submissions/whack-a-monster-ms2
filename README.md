@@ -17,7 +17,7 @@
   - <a href="#ux-stories">User stories</a>
   - <a href="#ux-wireframes">Wireframes</a>
   - <a href="#ux-design">Design</a>
-- <a href="#code">Code sourses</a>
+
 - <a href="#features">Features</a>
   - <a href="#features-current">Current</a>
   - <a href="#features-future">Future</a>
@@ -29,6 +29,7 @@
   - <a href="#testing-resolved">Resolved issues</a>
   - <a href="#testing-unresolved">Unresolved issues</a>
 - <a href="#deployment">Deployment</a>
+- <a href="#code">Code sourses</a>
 - <a href="#credits">Credits</a>
 
 ---
@@ -39,13 +40,15 @@
 
 "Whack-a-Monster" is is inspired by arcade and fair game "Whack a Mole." In this game the mole is replaced with cute pink monster beautiful artwork from 
 [Bevouliin](https://bevouliin.com/) and the action takes in space and the hoels are replaced with stardust clouds.
+This game is for all ages. It will definetly challenge you and test your focus and reaction.
 
 
-The game concept is simple:
+The game is simple:
 
-- Hit as many pink monsters as you can in 30s using the right mouse click.
-- You can multiclick on the  onsters for extra points.
-- If you reach 35 points before the times runs out you get additional 15 seconds.
+- Hit as many pink monsters as you can in 30 second using the right mouse click, earn points with every hit.
+- You can multiclick on the  monsters for extra points before they disapear
+- If you reach 35 points before the times runs out you get additional 10 seconds, keep collecting
+35 points to keep playing, try to beat your score every time.
 
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
@@ -91,10 +94,10 @@ The game has been designed with no 'fluff' to distract players from having some 
 
 ### Wireframes
 
-Wireframes for **mobile** and **desktop** can be accessed [here](wireframes/).
+Wireframes for **mobile** and **desktop** can be accessed [here](wireframes/wireframes.pdf).
 
 The wireframes were changing as the game ideas where shifting I started with the game idea of endless runner and the first wrireframe was created for that,
-the second idea was FlappyBird i had a wireframe created for that, but as I went throuogh the process it tuned out to be the Whack a Mole type of game
+the second idea was FlappyBird I had a wireframe created for that, but as I went throuogh the process it tuned out to be the Whack a Mole type of game
 so the game came first and the wireframes after in this case.
 
 For the mobile responsiveness and smaller screens I tried to do the portrait view, but it to adjust responsiveness for that would have taken too much time
@@ -109,13 +112,13 @@ and vertical view proved itself to be estetically pleasing and practical for thi
 
 It is a Space themed game. 
 The colour palette is very simple I sticked to 2 main colors for styling and continuity.
-The theme of the game is a blend of retro, cyber and neon, with the colour palatte intended to elicit thoughts of a futuristic cityscape at dusk. The background dominates most of the screen and is punctuated by fluorescent embers. Web-safe colours have been chosen for the core elements of the game (as far as possible), while more leeway has been given to the supporting colours.
+The bright red buttons plays is a nicely complements and the deep blue starry space background and 
+grey startdust clouds. The Pink monster stand out from the background creates a nice contrast with the rest of the game board,
+and draws the players attenstion.
 
-##### Core
+I used two pink monster sprites in this one for poping out, the other one for getting hit, which adds interactivity to the game.
+and improves UX as well as thhe sound that comes with the hit, which you have an oportunity to mute.
 
-The colours used for the core game aspects are easy on the eyes when concentrating but give sufficient contrast for easily identifying the game pieces. The snake (Phlox) on the background (Cetacean Blue) is the most frequent combination and is highly evocative of the overall futuristic/neon theme. The pure white text is bright but not overpowering, and is further broken up by sparing use of Neon Carrot and Screamin' Green (used also in the sparks' palette) to differentiate desktop and mobile controls. The enigmatic "the messier things become" in Phlox matches the colour of the snake.
-
-The border of the game area is Deep Carmine Pink if walls are enabled, or Wageningen Green if they are not. These colours intuitively suggests green for safe and red for danger. Without this distinction it would be difficult to immediately convey whether or not walls were enabled, so the colours are as close to primary as possible.
 
 - ![#ff0000](https://via.placeholder.com/15/ff0000/000000?text=+) #ff0000 (Red)
 - ![#010124](https://via.placeholder.com/15/010124/000000?text=+) #010124 (Deep Blue)
@@ -131,7 +134,8 @@ For consistency and simplicity this is the only font I used.
 
 #### Audio
 
-Audio I kept very simple uplifting and space related. I wanted a backgound music and a smack sound when you hit the monster. 
+Audio I kept very simple uplifting and space related. I wanted backgound music and a smack sound to start once you hirt the Start! 
+when you hit the monster. 
 
 - Music starts playing when you hit the "Start!" button.
 - Background music can be muted/unmuted using the sound button at the top of the game board.
@@ -150,19 +154,37 @@ it is called Beat Three. It has Techno/Futuristic feel to it.
 ### Code I used from other sources
 
 - [Franks Laboratory](https://www.youtube.com/watch?v=RTb8icFiSfk&t=289s&ab_channel=Frankslaboratory)
-inpiration and the main game functions along with some styling parameters were taken from this tutorial.
+inpiration and the main game functions along with some styling parameters were taken and modified from this Game Development with JavaScript for Beginners
+ tutorial. 
 - Mute/Unmute button [Stack Overflow](https://stackoverflow.com/questions/22918220/how-to-create-a-only-mute-unmute-button-like-youtube-in-html)
 - [Bootstrap modal](www.getbootrap.com) the modal used for the instructions
 - README.md file structure inspired some code taken from [Edb83](https://github.com/Edb83/snake) project
 
+### Student projects that inspired me
+- [Andy Osbourne "Dwarf Match"](https://github.com/Andy-Osborne/Dwarf-Match) - great fun, project, with beautiful visuals, different
+levels, I took a lot of inspiration from this game and it gave me an idea of what kind of game and 
+visuals I would like to create. I play this game myslef sometimes.
+- Sam Laubcher [Stellar-Drift](https://github.com/samlaubscher/Stellar-Drift-Game-M2/) - just for ideas, user interactions
+- [Steven Nicholson](https://github.com/bicks79/ShowMeWhatYouGot) - inspiration, UX, interactivity
+- [Cyber Snake game by Edb83(GitHub) ](https://github.com/Edb83/snake)
+
+### Youtube tutorials that inspired me
+- [PothonPrograming channel](https://www.youtube.com/watch?v=LZ0w3HAQKWU&ab_channel=PothOnProgramming)- endless runner game
+- [KnifeCircus youtube channel](https://www.youtube.com/watch?v=bG2BmmYr9NQ&ab_channel=KnifeCircus)-endless runner game
+- [Flappy Bird](https://www.youtube.com/watch?v=3SsYZDJdeXk&t=134s&ab_channel=KnifeCircus)
+- [FranksLabaratory](https://www.youtube.com/watch?v=lGJ9i6CYKyQ&ab_channel=Frankslaboratory)- flappy bird
+
 <span id="features"></span>
+
+
 
 ## Features
 
 <span id="features-current"></span>
 
 
-
+### Features to be implemented
+-
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
 
@@ -188,7 +210,8 @@ inpiration and the main game functions along with some styling parameters were t
 
 
 - [Google Fonts](https://fonts.google.com/) - 
-- [Colorswall](https://colorswall.com/palette/360/) for teh hex values
+- [Colorswall](https://colorswall.com/palette/360/) for the hex values
+- [Bootstrap](www.getbootsrap.com)
 
 ### Online resources
 
@@ -238,6 +261,10 @@ Many hours were spent testing Whack-a-Monster throughout its development. Over s
 <span id="testing-responsive"></span>
 
 ### Responsiveness
+
+- I wasn't able to test the XL screens as I was not an owner of one, the only time that I got to see it, was through
+my and my mentor screenshare, however I've added extra media query hoping that that would solve the issue,
+ehich was the score siapearing behind the lower row middle cloud.
 
 
 #### Browsers
@@ -327,13 +354,35 @@ Further reading and troubleshooting on cloning a repository from GitHub can be f
 
 <div align="right"><a style="text-align:right" href="#top">Go to index :arrow_double_up:</a></div>
 
+<span id="code"></span>
+
+## Code Sources
+
+### Code I used from other sources
+
+- [Franks Laboratory](https://www.youtube.com/watch?v=RTb8icFiSfk&t=289s&ab_channel=Frankslaboratory)
+inpiration and the main game functions along with some styling parameters were taken and modified from this Game Development with JavaScript for Beginners
+ tutorial. 
+- Mute/Unmute button [Stack Overflow](https://stackoverflow.com/questions/22918220/how-to-create-a-only-mute-unmute-button-like-youtube-in-html)
+- [Bootstrap modal](www.getbootrap.com) the modal used for the instructions
+- README.md file structure inspired some code taken from [Edb83](https://github.com/Edb83/snake) project
+
+### Student projects that inspired me
+- [Andy Osbourne "Dwarf Match"](https://github.com/Andy-Osborne/Dwarf-Match) - great fun, project, with beautiful visuals, different
+levels, I took a lot of inspiration from this game and it gave me an idea of what kind of game and 
+visuals I would like to create. I play this game myslef sometimes.
+- Sam Laubcher [Stellar-Drift](https://github.com/samlaubscher/Stellar-Drift-Game-M2/) - just for ideas, user interactions
+- [Steven Nicholson](https://github.com/bicks79/ShowMeWhatYouGot) - inspiration, UX, interactivity
+- [Cyber Snake game by Edb83(GitHub) ](https://github.com/Edb83/snake)
+
+### Youtube tutorials that inspired me
+- [PothonPrograming channel](https://www.youtube.com/watch?v=LZ0w3HAQKWU&ab_channel=PothOnProgramming)- endless runner game
+- [KnifeCircus youtube channel](https://www.youtube.com/watch?v=bG2BmmYr9NQ&ab_channel=KnifeCircus)-endless runner game
+- [Flappy Bird](https://www.youtube.com/watch?v=3SsYZDJdeXk&t=134s&ab_channel=KnifeCircus)
+- [FranksLabaratory](https://www.youtube.com/watch?v=lGJ9i6CYKyQ&ab_channel=Frankslaboratory)- flappy bird
 <span id="credits"></span>
 
 ## Credits
-
-#### Inspiration
-
-- [Youtube: Code The Snake Game Using JavaScript and HTML5](https://youtu.be/9TcU2C1AACw)
 -
 #### Code used/modified from other sources
 
@@ -353,7 +402,8 @@ Further reading and troubleshooting on cloning a repository from GitHub can be f
 ### Acknowledgements
 
 - Precious Iljege (Code Institute Mentor) - for his reassurance, support and guidance
-- Tutors Tim, Miklos, Scott - for support
+- Tutors Tim, Miklos, Scott - for support and dedication helping me to debug my code.
+- Alex Bitar, my friend, who kept me motivated and supported me through my stuggle with JavaScript
 
 
 ### Disclaimer
